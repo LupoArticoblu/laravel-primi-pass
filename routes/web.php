@@ -14,5 +14,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    //scrivo il testo dinamico
+    $saluto = "Hello";
+    $soggetto = "world";
+    //lo racchiudo in un array
+    $data = [
+        'saluto' =>$saluto,
+        'soggetto' =>$soggetto
+    ];
+    //lo vado a stampare
+    return view('home', $data);
 });

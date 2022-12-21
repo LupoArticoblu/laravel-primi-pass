@@ -7,6 +7,6 @@
   <title>Document</title>
 </head>
 <body>
-  <h1>Hello Laravel</h1>
+  <h1>"{{ $saluto }} {{ $soggetto }}"</h1>
 </body>
 </html>
